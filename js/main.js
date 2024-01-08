@@ -66,9 +66,6 @@ $('#nav').affix({
 }
 main();
 
-
-
-
 // Muestra el spinner
 var spinnerContainer = document.querySelector('.spinner-container');
 spinnerContainer.style.display = 'flex';
@@ -82,16 +79,17 @@ setTimeout(function () {
     // Cambia el z-index del menú a 1
     contentContainer.style.zIndex = '9999';
 }, 3000); // 3000 milisegundos = 3 segundos
-// para el navar
+
+// para el navegador
 document.addEventListener("DOMContentLoaded", function () {
   const navbar = document.getElementById("nav");
 
-  // Evento para cambiar el color de fondo cuando se desplaza la página
+  // Evento para cambiar la clase al desplazar la página
   window.addEventListener("scroll", function () {
     if (window.scrollY > 50) {
-      navbar.style.backgroundColor = "#220061"; // Cambia a un color sólido al desplazar
+      navbar.classList.add("scrolled"); // Agrega la clase "scrolled" al desplazar
     } else {
-      navbar.style.backgroundColor = "transparent"; // Barra de navegación transparente cuando está en la parte superior
+      navbar.classList.remove("scrolled"); // Quita la clase "scrolled" cuando está en la parte superior
     }
   });
 });
