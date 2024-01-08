@@ -78,8 +78,9 @@ setTimeout(function () {
     var contentContainer = document.querySelector('#nav');
     // Cambia el z-index del menú a 1
     contentContainer.style.zIndex = '9999';
-}, 3000); // 3000 milisegundos = 3 segundos
+}, 1300); // 3000 milisegundos = 3 segundos
 
+/* 
 // para el navegador
 document.addEventListener("DOMContentLoaded", function () {
   const navbar = document.getElementById("nav");
@@ -93,3 +94,12 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+#nav.scrolled {
+	background-color: white;
+	color: #0D411C;
+  }
+  
+#nav.scrolled .navbar-custom a {
+	color: #0D411C;  
+  }*/
+  
