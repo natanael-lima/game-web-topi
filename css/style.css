@@ -178,13 +178,13 @@ hr {
 }
 .navbar-custom .nav li a:hover {
 	outline: 0;
-	color: #566dd4;
+	color: #35B08A;
 	background-color: transparent;
 }
 .navbar-custom .nav li a:focus, .navbar-custom .nav li a:active {
 	outline: 0;
 	background-color: transparent;
-	color: #83a3fa;
+	color: #4acfa5;
 }
 .navbar-custom .nav li.active {
 	outline: 0;
@@ -279,7 +279,7 @@ hr {
 }
 
 .card-title{
-	color: #566dd4;
+	color: #35B08A;
 }
 
 /* Portfolio Section */
@@ -369,7 +369,7 @@ ol.type li a:hover {
 	text-align: center;
 	margin: 0 auto;
 	color: #ffffff;
-	background: rgba(255, 255, 255, 0.36);
+	background: rgba(0, 0, 0, 0.86);
 	padding: 30% 0 0 0;
 	height: 100%;
 	width: 100%;
@@ -417,7 +417,7 @@ ol.type li a:hover {
 }
 
 .btn-personal:hover{
-	background-color: #17463e;
+	background-color: #35B08A;
 	color: white;
 }
 
@@ -452,10 +452,10 @@ label {
 	padding: 6px 12px;
 	font-size: 14px;
 	line-height: 1.42857143;
-	color: #2c3e50;
+	color: #d61212;
 	background-color: rgba(255,255,255,0.8);
 	background-image: none;
-	border: 1px solid #999;
+	border: 1px solid #5fec01;
 	border-radius: 0;
 	-webkit-box-shadow: none;
 	box-shadow: none;
@@ -485,17 +485,17 @@ color: #2c3e50;
 /* Footer Section*/
 #footer {
 	background: #000000;
-	color: #C3CAD3;
+	color: #ffffff;
 	padding: 30px 0 25px 0;
 }
 #footer p {
 	font-size: 13px;
 }
 #footer a {
-	color: #9DC4D6;
+	color: #ffffff;
 }
 #footer a:hover {
-	color: #4C6088;
+	color: #35B08A;
 }
 #footer .social {
 	margin-top: 0px;
@@ -507,11 +507,11 @@ color: #2c3e50;
 #footer .social i.fa {
 	font-size: 22px;
 	padding: 4px;
-	color: #C3CAD3;
+	color: #ffffff;
 	transition: all 0.5s;
 }
 #footer .social i.fa:hover {
-	color:#566dd4;
+	color:#35B08A;
 }
 .btn:active, .btn.active {
 	background-image: none;
