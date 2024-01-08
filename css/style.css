@@ -6,11 +6,10 @@ body{
 	width: 100% !important;
 	height: 100% !important;
 	/*background: linear-gradient(100deg,#ffc17a, #ffc889, #ff9191);*/
-	background-image: url(../img/fondo4.png);
-	background: cover;
+	background-image: url(../img/fondo1.png);
+	background:cover;
 	background-attachment: fixed;
 }
-
 
 /*spinner*/
 .loader {
@@ -29,15 +28,15 @@ body{
   @keyframes shadowPulse {
 	33% {
 	  background: #FFF;
-	  box-shadow: -24px 0 #56D4C2, 24px 0 #FFF;
+	  box-shadow: -24px 0 #56a6d4, 24px 0 #FFF;
 	}
 	66% {
-	  background: #56D4C2;
+	  background: #56a6d4;
 	  box-shadow: -24px 0 #FFF, 24px 0 #FFF;
 	}
 	100% {
 	  background: #FFF;
-	  box-shadow: -24px 0 #FFF, 24px 0 #56D4C2;
+	  box-shadow: -24px 0 #FFF, 24px 0 #56a6d4;
 	}
   }
 
@@ -56,37 +55,6 @@ body{
     background-color: rgba(11, 13, 34, 0.92); /* Un fondo semitransparente */
   }
 
-
-
-/*animacion maquin de escribir*/
-.soy-apu{
-	color: #8BDDD1;
-	font-size: 18px;
-	font-weight: 300;
-	letter-spacing: 1px;
-
-	display: block;
-	white-space: nowrap;
-	border-right: 2px solid;
-	width: 54ch;
-	
-	animation: typing 9s steps(54), blink .2s infinite step-end alternate;
-	animation-iteration-count: infinite; /* Agrega esta línea */
-	overflow:hidden;
-  }
-	@keyFrames typing {
-	
-	from { width: 0}
-	}
-	
-	@keyFrames blink {
-	 50% { border-color: transparent}
-	}
-@media screen and (max-width: 768px) {
-		.soy-apu {
-			font-size: 10px;
-		}
-	}
 /*animacion color rainbow*/
 .text-rainbow {
 	padding: 20px;
@@ -111,14 +79,14 @@ body{
 
 h2 {
 	margin: 0 0 20px 0;
-	color: #2a553f;
+	color: #000000;
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	font-weight: 700;
 	font-size: 30px;
 }
 h3, h4 {
-	color: #fffde3;
+	color: #000000;
 	font-size: 18px;
 	font-weight: 300;
 	letter-spacing: 1px;
@@ -130,7 +98,7 @@ h5 {
 }
 
 a {
-	
+	color:#4e5856
 }
 a:hover, a:focus {
 	text-decoration: none;
@@ -166,7 +134,7 @@ hr {
 	width: 70px;
 	text-align: center;
 	position: relative;
-	background: #3c663b;
+	background: #2c2c2c;
 	margin: 0 auto;
 	margin-bottom: 30px;
 	border: 0;
@@ -191,7 +159,7 @@ hr {
 }
 .navbar-custom {
 	margin-bottom: 0;
-	background-color: #ffffff21;
+	background-color: #000000;
 	border-radius: 0px;
 	padding: 10px 0;
 	border-bottom: 2px solid #ffffff;
@@ -199,16 +167,6 @@ hr {
 .navbar-custom a {
 	color: #ffffff;
 }
-
-#nav.scrolled {
-	background-color: white;
-	color: #0D411C;
-  }
-  
-#nav.scrolled .navbar-custom a {
-	color: #0D411C; /* Puedes ajustar el color del enlace aquí */
-  }
-  
 
 .navbar-custom .nav li a {
 	margin: 0 60px;
@@ -220,22 +178,22 @@ hr {
 }
 .navbar-custom .nav li a:hover {
 	outline: 0;
-	color: #13330d;
+	color: #566dd4;
 	background-color: transparent;
 }
 .navbar-custom .nav li a:focus, .navbar-custom .nav li a:active {
 	outline: 0;
 	background-color: transparent;
-	color: #68570c;
+	color: #83a3fa;
 }
 .navbar-custom .nav li.active {
 	outline: 0;
 }
 .navbar-custom .nav li.active a {
-	background-color: rgb(0, 16, 155);
+	background-color: rgb(255, 39, 208);
 }
 .navbar-custom .nav li.active a:hover {
-	color: #a70a0a;
+	color: #ff0000;
 }
 .btn-default {
 	text-transform: uppercase;
@@ -270,6 +228,23 @@ hr {
 	font-family:CODE light;
 }
 
+.titulo-welcome {
+	opacity: 0;
+	animation: fadeIn 3.5s ease-out forwards;
+  }
+  
+  @keyframes fadeIn {
+	from {
+	  opacity: 0;
+	  transform: translateY(-20px); /* Otra opción: transform: scale(0.8); */
+	}
+	to {
+	  opacity: 1;
+	  transform: translateY(0);
+	}
+  }
+  
+
 @media (max-width: 768px) {
 	#home .titulo-welcome{
 		font-size: 4em;
@@ -280,9 +255,9 @@ hr {
 /* About Section */
 #about {
 	padding: 120px 0;
-	background:rgb(160, 197, 171);
-	
+	background: white;
 }
+
 #about .about-text {
 	margin-left: 10px;
 	text-align: center;
@@ -297,6 +272,10 @@ hr {
 	margin-top: 10px;
 	margin-bottom: 30px;
 	line-height: 22px;
+	color: #000;
+}
+#about ul li{
+	color: #000;
 }
 
 .card-title{
@@ -306,9 +285,7 @@ hr {
 /* Portfolio Section */
 #portfolio {
 	padding: 120px 0;
-	
-	/*background-image: url(../img/fondo4.png	);
-	background-size:cover;*/
+	background: white;
 }
 .categories {
 	padding-bottom: 30px;
@@ -322,18 +299,18 @@ ol.type li {
 	margin-left: 20px;
 }
 ol.type li a {
-	border: 1px solid #D2E8E5;
-	color: #D2E8E5;
+	border: 1px solid #000000;
+	color: #000000;
 	padding: 8px 20px;
 }
 ol.type li a.active {
-	background: #41A299;
-	border: 1px solid #222;
+	background: rgb(0, 0, 0);
+	border: 1px solid #ffffff00;
 	color: #fff;
 }
 ol.type li a:hover {
-	background: #41A299;
-	border: 1px solid #222;
+	background: #031216;
+	border: 1px solid #22222200;
 	color: #fff;
 }
 .isotope-item {
@@ -392,7 +369,7 @@ ol.type li a:hover {
 	text-align: center;
 	margin: 0 auto;
 	color: #ffffff;
-	background: rgba(0, 0, 0, 0.66);
+	background: rgba(255, 255, 255, 0.36);
 	padding: 30% 0 0 0;
 	height: 100%;
 	width: 100%;
@@ -435,19 +412,20 @@ ol.type li a:hover {
 }
 
 .btn-personal{
-	background-color: #208679;
-	color:#e1faf7;
+	background-color: #ebfff9;
+	color:#010202;
 }
 
 .btn-personal:hover{
-	background-color: #41A299;
+	background-color: #17463e;
 	color: white;
 }
 
 /* Contact Section */
 #contact {
 	padding: 120px 0 60px 0;
-	
+	padding: 120px 0;
+	background: white;
 }
 #contact h3 {
 	padding-top: 20px;
@@ -506,7 +484,7 @@ color: #2c3e50;
 
 /* Footer Section*/
 #footer {
-	background: #220061;
+	background: #000000;
 	color: #C3CAD3;
 	padding: 30px 0 25px 0;
 }
@@ -533,7 +511,7 @@ color: #2c3e50;
 	transition: all 0.5s;
 }
 #footer .social i.fa:hover {
-	color:#8BDDD1;
+	color:#566dd4;
 }
 .btn:active, .btn.active {
 	background-image: none;
