@@ -103,6 +103,5 @@ document.addEventListener("DOMContentLoaded", function () {
 	color: #0D411C;  
   }*/
 
-  /*bakground */
 
   
