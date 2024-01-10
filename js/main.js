@@ -102,4 +102,7 @@ document.addEventListener("DOMContentLoaded", function () {
 #nav.scrolled .navbar-custom a {
 	color: #0D411C;  
   }*/
+
+  /*bakground */
+
   

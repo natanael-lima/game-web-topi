@@ -5,13 +5,13 @@ body{
 	color: white;
 	width: 100% !important;
 	height: 100% !important;
-	/*background: linear-gradient(100deg,#ffc17a, #ffc889, #ff9191);*/
+	/*background: linear-gradient(100deg,#ffc17a, #ffc889, #ff9191);
 	background-image: url(../img/fondo1.png);
 	background:cover;
-	background-attachment: fixed;
+	background-attachment: fixed;*/
 }
 
-/*spinner*/
+/*spinner
 .loader {
 	width: 16px;
 	height: 16px;
@@ -44,16 +44,16 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Esto asegura que el spinner cubra toda la altura de la ventana */
+    height: 100vh; 
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
 	z-index: 9999;
-    transition: z-index 3s; /* Agrega una transición suave */
-    background-color: rgba(11, 13, 34, 0.92); /* Un fondo semitransparente */
-  }
+    transition: z-index 3s; 
+    background-color: rgba(11, 13, 34, 0.92); /
+  }*/
 
 /*animacion color rainbow*/
 .text-rainbow {
@@ -141,8 +141,9 @@ hr {
 }
 /* Menu*/
 #nav {
-	z-index: 0;
+	z-index: 9999;
 	transition: 0.8s;
+
 }
 #nav.affix {
 	position: fixed;
@@ -216,8 +217,22 @@ hr {
 
 #home {
 	padding: 380px 0;
+	width:100%; 
+	height:100%;
+	background: radial-gradient(circle, #1b6851 0%, #05555f 33%,#28476e 66%,#115f3f 100%);
+	background-size: 200% 200%; /* Ajusta esto para asegurar el espacio suficiente para el desplazamiento */
+	animation: gradientAnimation 10s linear infinite; /* Ajusta la duración según tus preferencias */
+  }
+  
+  @keyframes gradientAnimation {
+	0% {
+	  background-position: 0% 0%;
+	}
+	100% {
+	  background-position: 100% 100%;
+	}
+  }
 
-}
 #home .home-text {
 	margin-left: 10px;
 	text-align: center;
