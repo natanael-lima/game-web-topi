@@ -98,11 +98,11 @@ h5 {
 }
 
 a {
-	color:#4e5856
+	color:#000;
 }
 a:hover, a:focus {
 	text-decoration: none;
-	color: #000;
+	color: #35B08A;
 }
 ul, ol {
 	list-style: none;
@@ -221,7 +221,7 @@ hr {
 	height:100%;
 	background: radial-gradient(circle, #1b6851 0%, #05555f 33%,#28476e 66%,#115f3f 100%);
 	background-size: 200% 200%; /* Ajusta esto para asegurar el espacio suficiente para el desplazamiento */
-	animation: gradientAnimation 10s linear infinite; /* Ajusta la duración según tus preferencias */
+	animation: gradientAnimation 4s linear infinite; /* Ajusta la duración según tus preferencias */
   }
   
   @keyframes gradientAnimation {
