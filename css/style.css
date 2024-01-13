@@ -1,3 +1,8 @@
+@font-face {
+	font-family: MiFuente;
+	src: url('/Portafolio2/fonts/fonts/APOLLO.otf');
+
+  }
 body{
 	font-family: 'Open Sans', sans-serif;
 	text-rendering: optimizeLegibility !important;
@@ -36,7 +41,7 @@ a {
 }
 a:hover, a:focus {
 	text-decoration: none;
-	color: #35B08A;
+	color: #b58dfa;
 }
 ul, ol {
 	list-style: none;
@@ -117,13 +122,13 @@ hr {
 }
 .navbar-custom .nav li a:hover {
 	outline: 0;
-	color: #99C1BF;
+	color: #d9c3ff;
 	background-color: transparent;
 }
 .navbar-custom .nav li a:focus, .navbar-custom .nav li a:active {
 	outline: 0;
 	background-color: transparent;
-	color: #79d1c5;
+	color: #c3a0ff;
 }
 .navbar-custom .nav li.active {
 	outline: 0;
@@ -147,8 +152,8 @@ hr {
 }
 .btn-default:hover, .btn-default:focus, .btn-default.focus, .btn-default:active, .btn-default.active {
 	color: #fff;
-	background-color: #070b0c;
-	border-color: #000000;
+	background-color: #7c53c2;
+	border-color: #7c53c2;
 }
 
 /* Home Section*/
@@ -197,7 +202,7 @@ hr {
 }
 
 #home .titulo-welcome{
-	font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	font-family:MiFuente,Haettenschweiler, 'Arial Narrow Bold', sans-serif;;
 	font-size: 12em; /* Tamaño de letra gigante */
     line-height: 1.0; /* Espaciado entre líneas */
     white-space: pre-line; /* Permite mantener saltos de línea en el texto */
@@ -223,8 +228,8 @@ hr {
 
 @media (max-width: 768px) {
 	#home .titulo-welcome{
-		font-size: 5em;
-		font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+		font-size: 4.5em;
+		font-family:MiFuente, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 		line-height: 1.4; /* Espaciado entre líneas */
     	white-space: pre-line; /* Permite mantener saltos de línea en el texto */
 	}
@@ -263,7 +268,7 @@ hr {
 }
 
 .card-title{
-	color: #35B08A;
+	color: #7c53c2;
 }
 
 /* Portfolio Section */
@@ -401,7 +406,7 @@ ol.type li a:hover {
 }
 
 .btn-personal:hover{
-	background-color: #35B08A;
+	background-color: #7c53c2;
 	color: white;
 }
 
@@ -431,7 +436,7 @@ ol.type li a:hover {
 	color: #ffffff;
 }
 #footer a:hover {
-	color: #35B08A;
+	color: #b58dfa;
 }
 #footer .social {
 	margin-top: 0px;
@@ -447,7 +452,7 @@ ol.type li a:hover {
 	transition: all 0.5s;
 }
 #footer .social i.fa:hover {
-	color:#35B08A;
+	color:#b58dfa;
 }
 .btn:active, .btn.active {
 	background-image: none;
