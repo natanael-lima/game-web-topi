@@ -102,7 +102,7 @@ hr {
 	border-radius: 0px;
 	padding: 10px 0;
 	border-bottom: 2px solid #fff;
-	transition: background-color 0.4s ease;
+	transition: background-color 0.6s ease;
 }
 .navbar-custom a {
 	color: #ffffff;
@@ -153,12 +153,11 @@ hr {
 
 /* Home Section*/
 #home {
-	padding: 150px 0;
+	padding: 200px;
 	width:100%; 
 	height:100%;
 	background: radial-gradient(circle, #22355a 0%,#161752 33%,#390569 66%,#4f0297 100%);
 	background-size: 200% 200%; 
-
 	animation: gradientAnimation 3s linear infinite alternate; 
   }
   
@@ -199,8 +198,8 @@ hr {
 
 #home .titulo-welcome{
 	font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-	font-size: 11.98em; /* Tamaño de letra gigante */
-    line-height: 1.2; /* Espaciado entre líneas */
+	font-size: 12em; /* Tamaño de letra gigante */
+    line-height: 1.0; /* Espaciado entre líneas */
     white-space: pre-line; /* Permite mantener saltos de línea en el texto */
 }
 
@@ -224,11 +223,13 @@ hr {
 
 @media (max-width: 768px) {
 	#home .titulo-welcome{
-		font-size: 4em;
+		font-size: 5em;
 		font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+		line-height: 1.4; /* Espaciado entre líneas */
+    	white-space: pre-line; /* Permite mantener saltos de línea en el texto */
 	}
 	#home {
-		padding: 340px 0;
+		padding: 300px 0;
 		height: 100%;
 		width: 100%;
 		
