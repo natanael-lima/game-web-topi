@@ -73,7 +73,7 @@ function main() {
     $(window).scroll(function(){
       scroll = $(window).scrollTop();
   
-      if(scroll > 200){
+      if(scroll > 50){
         if(!flag){
           $(".navbar-custom").css({"background-color": "#000"});
           flag = true;
