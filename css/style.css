@@ -177,13 +177,13 @@ hr {
 
 /*animacion color rainbow*/
 .text-rainbow {
-	padding: 20px;
-	font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-	font-size: 3em;
+	padding: 15px;
+	font-family:'Montserrat', sans-serif;
+	font-size: 2em;
 	background-clip: text;
 	-webkit-background-clip: text;
 	color: transparent;
-	background-image: linear-gradient(40deg, #bcca88, #9ef5ad, #efff95);
+	background-image: linear-gradient(40deg, #7ebad1, #bc85ca, #6c4ca7);
 	background-size: 200% 100%;
 	animation: rainbow 3s linear infinite;
 }
@@ -270,6 +270,10 @@ hr {
 .card-title{
 	color: #7c53c2;
 }
+
+.custom-color {
+    color: #7c53c2; /* Cambia este valor al color que desees */
+  }
 
 /* Portfolio Section */
 #portfolio {
