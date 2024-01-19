@@ -419,7 +419,9 @@ ol.type li a:hover {
 	font-weight: 400;
 	color: #fff;
 }
-
+.text-contact{
+	font-size: 2em;
+}
 /* Footer Section*/
 #footer {
 	background: #000000;
