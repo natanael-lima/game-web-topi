@@ -407,21 +407,81 @@ ol.type li a:hover {
 	color: white;
 }
 
+
 /* Contact Section */
 #contact {
 	padding: 120px 0 60px 0;
 	padding: 120px 0;
-	background: white;
+	background: rgb(255, 255, 255);
 }
-#contact h3 {
-	padding-top: 20px;
-	font-size: 20px;
-	font-weight: 400;
-	color: #fff;
-}
-.text-contact{
-	font-size: 1em;
-}
+
+/*contacto form*/
+.contact-form {
+    width: 100%;
+    padding: 20px;
+    border-radius: 8px;
+
+  }
+
+  #fs-frm {
+    padding: 30px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrar elementos horizontalmente */
+  }
+
+  #fs-frm-inputs {
+    display: grid;
+    grid-template-columns: 1fr 8fr;
+    grid-gap: 16px;
+    width: 100%;
+	padding: 0 0 10px 
+  }
+
+  label {
+    margin-bottom: 8px;
+    display: block;
+	color: black;
+  }
+
+  input,
+  textarea {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+	color: black;
+  }
+
+  input[type="submit"] {
+    background-color: #8f76e7;
+    color: #ffffff;
+    padding:12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+  }
+
+  input[type="submit"]:hover {
+    background-color: #7c61db;
+  }
+
+  #mensaje-exito {
+    display: none;
+    color: green;
+    margin-top: 10px;
+  }
+
+  @media screen and (max-width: 768px) {
+    #fs-frm-inputs {
+      grid-template-columns: 1fr;
+    }
+  }
+
 /* Footer Section*/
 #footer {
 	background: #000000;
@@ -452,4 +512,37 @@ ol.type li a:hover {
 }
 #footer .social i.fa:hover {
 	color:#b58dfa;
+}
+/*slider tecnologis*/
+.slider-container {
+    overflow: hidden;
+    width: 95vw;
+	margin: auto;
+	height: auto;
+}
+
+.slider {
+    display: flex;
+    /* Duplica la longitud de la animación para asegurarse de que se repita completamente */
+    animation: slide 5s linear infinite;
+	-webkit-animation: slide 5s linear infinite;
+	width: calc(200px*16);
+}
+
+.slider .slide{
+	width: 200px;
+}
+
+.slider .slide img{
+	width:96px;
+}
+
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-50px*11));
+    }
 }
