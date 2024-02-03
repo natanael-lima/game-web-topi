@@ -400,12 +400,28 @@ ol.type li a:hover {
 .btn-personal{
 	background-color: #ffffff;
 	color:#010202;
+	border-color: #000000;
 }
 
 .btn-personal:hover{
-	background-color: #7c53c2;
+	background-color: #b58dfa;
 	color: white;
+	border-color: #000000;
 }
+
+.btn-form{
+	background-color: #ffffff;
+	color:#010202;
+	border-color: #000000;
+	width: 100%;
+}
+
+.btn-form:hover{
+	background-color: #000000;
+	color: white;
+	border-color: #000000;
+}
+
 
 
 /* Contact Section */
@@ -424,7 +440,7 @@ ol.type li a:hover {
   }
 
   #fs-frm {
-    padding: 30px;
+    padding: 10px;
     border-radius: 8px;
     display: flex;
     flex-direction: column;
@@ -433,14 +449,14 @@ ol.type li a:hover {
 
   #fs-frm-inputs {
     display: grid;
-    grid-template-columns: 1fr 8fr;
+    grid-template-columns: 1fr 5fr;
     grid-gap: 16px;
     width: 100%;
 	padding: 0 0 10px 
   }
 
   label {
-    margin-bottom: 8px;
+    margin-bottom: 5px;
     display: block;
 	color: black;
   }
@@ -455,20 +471,6 @@ ol.type li a:hover {
 	color: black;
   }
 
-  input[type="submit"] {
-    background-color: #8f76e7;
-    color: #ffffff;
-    padding:12px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s;
-  }
-
-  input[type="submit"]:hover {
-    background-color: #7c61db;
-  }
 
   #mensaje-exito {
     display: none;
