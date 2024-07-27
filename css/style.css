@@ -1,18 +1,50 @@
 body, html {
     margin: 0;
     padding: 0;
-    height: 100%;
-    overflow: hidden;
+    background: linear-gradient(90deg, #ffcccb, #f0f8ff, #b0e0e6, #e2c8ff, #ffcccb);
+    background-size: 300% 300%;
+    animation: gradientShift 10s linear infinite;
+}
+
+.glass {
+    height: 30px;
+    margin: 20px auto;
+    background-color: rgba(255, 255, 255, 0.144); /* More transparent to enhance glass effect */
+    backdrop-filter: blur(10px); /* Blurs the background behind the element */
+    border-radius: 15px; /* Rounds the corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a shadow for depth */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Light border to enhance the glass effect */
+    margin: 20px; /* Margin around the element */
+    padding: 20px; /* Padding inside the element */
+    box-shadow:  0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    z-index: 999;
+}
+
+.glass h1 {
+    color: #333; /* Darker text color for better contrast */
+    font-size: 20px; /* Font size */
+    font-weight: 400; /* Font weight */
+    margin: 0; /* Removes default paragraph margin */
+    text-align: center;
 }
 
 #game-container {
     position: relative;
     width: 100%;
-    height: 100vh;
-    background-image: url('../img/background.png');
-    background-size: cover;
+    height: 90vh;
     overflow: hidden;
 }
+
+/* Animation for shifting the gradient background */
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 200% 50%;
+    }
+}
+
 
 #shooter {
     position: absolute;
@@ -21,7 +53,6 @@ body, html {
     margin-bottom: 10vh; /* 10% de la altura de la ventana del navegador */
     bottom: 0;
     left: 0;
-
     background-size: cover;
     background-image: url('../img/shooter.png');
     padding: 20px;
@@ -51,7 +82,7 @@ body, html {
 .heart{
     position: absolute;
     width: 5vw;
-    height: 5vw;
+    height: 10vw;
     background-image: url('img/heart.png'); 
     background-size: cover;
 }
@@ -83,6 +114,9 @@ body, html {
         width: 8vw;
         height:8vw;
     }
+    #game-container {
+        height: 85vh;
+    }
 }
 
 /* Estilos para pantallas medianas (tabletas) */
@@ -102,6 +136,9 @@ body, html {
         width: 6vw;
         height: 6vw;
     }
+    #game-container {
+        height: 80vh;
+    }
 }
 
 /* Estilos para pantallas grandes (monitores de escritorio) */
@@ -115,5 +152,8 @@ body, html {
     .raindrop {
         width: 4vw;
         height: 4vw;
+    }
+    #game-container {
+        height: 85vh;
     }
 }
